@@ -29,10 +29,10 @@ app.use("/api/v1/auth",router)
 app.use("/api/v1/category",categoryRoute)
 app.use("/api/v1/product",productRoute)
 
-//rest API
-app.use("*",function(req,resp){
-   resp.sendFile(path.join(__dirname,"../client/build/index.html"))
-})
+// //rest API
+// app.use("*",function(req,resp){
+//    resp.sendFile(path.join(__dirname,"../client/build/index.html"))
+// })
 
 // URL of server
 const URL = process.env.PORT || 8080
